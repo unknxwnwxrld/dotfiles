@@ -1,0 +1,47 @@
+# ~/.config/starship.toml
+
+[directory]
+truncation_length = 3
+read_only = " "  # lock icon из Nerd Fonts
+format = "[$folder_icon $path]($style)[$read_only]($read_only_style) "
+style = "bold blue"
+read_only_style = "bold red"
+
+[custom.folder_icon]
+when = "true"
+command = """
+case $PWD in
+  */Downloads) echo "" ;;   # nf-oct: file-directory
+  */Documents) echo "" ;;   # nf-fa: folder
+  */Pictures) echo "" ;;    # nf-fa: file-image
+  */Music) echo "" ;;       # nf-fa: music
+  */Videos) echo "" ;;      # nf-fa: video-camera
+  *) echo "" ;;             # nf-fa: folder-open
+esac
+"""
+format = "[$output]($style) "
+style = "blue"
+
+[git_branch]
+format = "[$symbol $branch]($style) "
+symbol = ""  # nf-mdi: git-branch
+style = "bold green"
+
+[git_status]
+format = "([$all_status]($style)) "
+style = "bold red"
+conflicted = " "  # nf-dev: git-merge
+ahead = " "       # nf-fa: arrow-up
+behind = " "      # nf-fa: arrow-down
+diverged = " "    # nf-dev: git-branch
+untracked = "★ "   # nf-fa: star
+stashed = "⚑ "     # nf-fa: flag
+modified = " "    # nf-oct: primitive-dot
+staged = " "      # nf-fa: check-circle
+renamed = "➜ "     # обычная стрелка
+deleted = " "     # nf-oct: circle-slash
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+

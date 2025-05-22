@@ -3,6 +3,8 @@ $req = requirements.txt
 $reqp = requirements-pacman.txt
 $req = requirements.txt
 
+cp -r .config/ ~/
+
 cd ~
 
 # Installing yay

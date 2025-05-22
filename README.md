@@ -10,6 +10,9 @@ App launcher: [Albert](https://github.com/albertlauncher/albert)
 ![empty-background](assets/screenshots/empty-desktop.png)
 ![hyprpanel-menu](assets/screenshots/hyprpanel-menu.png)
 ![kitty](assets/screenshots/kitty.png)
+![albert](assets/screenshots/albert.png)
+![albert-application](assets/screenshots/albert-application.png)
+![albert-math](assets/screenshots/albert-math.png)
 # Installation
 ```
 git clone https://github.com/unknxwnwxrld/dotfiles.git

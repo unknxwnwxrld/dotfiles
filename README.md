@@ -7,6 +7,9 @@ Screenlocker: [Hyprlock](https://github.com/hyprwm/hyprlock)
 Bar: [Hyprpanel](https://github.com/Jas-SinghFSU/HyprPanel)  
 App launcher: [Albert](https://github.com/albertlauncher/albert)  
 # Screenshots
+![empty-background](assets/screenshots/empty-desktop.png)
+![hyprpanel-menu](assets/screenshots/hyprpanel-menu.png)
+![kitty](assets/screenshots/kitty.png)
 # Installation
 ```
 git clone https://github.com/unknxwnwxrld/dotfiles.git
